@@ -5,7 +5,7 @@
 
 ![example](https://github.com/k-dev-web/angularTest/blob/main/src/assets/img.png?raw=true)
 
-
+[live code](https://stackblitz.com/~/github.com/k-dev-web/angularTest)
 # Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
