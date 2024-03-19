@@ -1,3 +1,11 @@
+# This test work for position angular develop
+Суть завдання: реалізувати на JavaScript сховище сертифікатів у браузері. Зовні це має бути сторінка, де є табличка поточних сертифікатів що вже додані. Клацнувши на сертифікат, можна отримати коротку інформацію з нього. Додані сертифікати зберігаються в LocalStorage, тобто під час перезавантаження сторінки повинні відображатися вже додані сертифікати. Додати сертифікат у сховище можна, перетягнувши файл у поле drag&drop'а.
+
+Для реалізації можна використовувати будь-який сучасний JS-framework (Angular, React, Vue), а можна і не використовувати та реалізувати на ванільному JS. Використання TypeScript і Angular буде плюсом.
+
+![alt text](https://github.com/k-dev-web/angularTest/src/assets/img.png)
+
+
 # Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
