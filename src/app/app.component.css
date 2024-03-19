@@ -8,8 +8,8 @@
     flex-direction: column;
 
     button {
-      width: 13.5rem;
-      height: 3rem;
+      width: 80%;
+      height: 10%;
       align-self: center;
     }
   }
