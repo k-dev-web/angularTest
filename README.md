@@ -3,7 +3,7 @@
 
 Для реалізації можна використовувати будь-який сучасний JS-framework (Angular, React, Vue), а можна і не використовувати та реалізувати на ванільному JS. Використання TypeScript і Angular буде плюсом.
 
-![alt text](https://github.com/k-dev-web/angularTest/src/assets/img.png)
+![example]([https://github.com/k-dev-web/angularTest/src/assets/img.png](https://github.com/k-dev-web/angularTest/blob/main/src/assets/img.png))
 
 
 # Test
