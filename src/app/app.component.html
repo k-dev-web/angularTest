@@ -1,0 +1,46 @@
+<div class="home_container">
+  <div class="list_container">
+    <button (click)="changeSelected(-1)">
+      Add cert
+    </button>
+    <mat-list class="list_cert">
+
+      <ng-container *ngFor="let item of certs.cert.getValue(); let i=index">
+        <mat-list-item (click)="changeSelected(i)" class="{{i===selectedItem?'selected':''}}">
+          {{ item.data.commonName }}
+        </mat-list-item>
+      </ng-container>
+
+      <mat-list-item *ngIf="!certs.cert.getValue().length"><label>Empty user list</label></mat-list-item>
+
+    </mat-list>
+  </div>
+  <mat-card>
+    <div *ngIf="!selectedItem.item" draggable="true" ngClass="{{dragAreaClass}}">
+      <p>Drag files here</p>
+      <p> or</p>
+      <button (click)="file.click()">
+        choose with standard dialog
+      </button>
+      <input type="file"
+             #file
+             [multiple]="false"
+             (change)="onFileChange($event)"
+             style="display:none"/>
+    </div>
+    <mat-list *ngIf="selectedItem.item">
+      <mat-list-item>
+        Common Name: {{ selectedItem.item.commonName }}
+      </mat-list-item>
+      <mat-list-item>
+        Issuer CN: {{ selectedItem.item.issuerCommonName }}
+      </mat-list-item>
+      <mat-list-item>
+        Valid From: {{ selectedItem.item.dateBefore }}
+      </mat-list-item>
+      <mat-list-item>
+        Valid To: {{ selectedItem.item.dateAfter }}
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+</div>

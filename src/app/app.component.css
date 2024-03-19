@@ -1,0 +1,53 @@
+.home_container {
+  display: flex;
+  width: 60vw;
+  height: 40vh;
+
+  .list_container {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      width: 13.5rem;
+      height: 3rem;
+      align-self: center;
+    }
+  }
+
+
+  mat-card {
+    border: black 1px dashed;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  mat-list {
+    height: 80%;
+    &.list_cert {
+      margin: 1rem;
+      overflow: auto;
+      overflow-x: hidden;
+
+      mat-list-item {
+        border: black 1px solid;
+
+        &.selected {
+          background-color: #BDBDBD;
+
+          &:after {
+            align-items: center;
+            display: flex;
+            content: "→";
+          }
+        }
+
+      }
+    }
+  }
+
+}
